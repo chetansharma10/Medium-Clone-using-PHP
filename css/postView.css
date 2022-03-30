@@ -1,0 +1,367 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.main2{
+    width:100%;
+    height:100vh;
+    position:relative;
+
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+}
+.sideBar2{
+    width:80px;
+    height:100vh;
+    position: fixed;
+    border:1px solid lightgray;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.sideLogo{
+    width:35px;
+    height:35px;
+}
+.links{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.links a{
+    margin-bottom: 20px;
+}
+
+.material-icons{
+    font-size:30px;
+    color:lightgray;
+    transition: 1s ease;
+
+}
+.material-icons:hover{
+    color:black;
+    transition: 1s ease;
+}
+.likes{
+    width:100%;
+    height:auto;
+    margin-left: 60px;
+    margin-bottom: 50px;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.likes .addLike{
+
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+
+    outline:none;
+    transform:scale(1.3);
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+    
+}
+.addBook{
+    margin-left: 50px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+
+    outline:none;
+    transform:scale(1.3);
+
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.contentBar{
+    width:100%;
+    height:100%;
+    display:flex;
+    padding-left: 80px;
+    padding-right: 20px;
+    flex-direction:column;
+
+
+}
+
+
+.contentTop{
+    height:50px;
+    width:100%;
+    padding:10px;
+    
+    padding-left:50px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    
+}
+
+.whoLogo {
+    width:35px;
+    height:35px;
+    border:0.4px solid lightgray;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.whoAdd{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-left: 20px;
+    opacity: 0.7;
+    color:black;
+}
+.contentBottom{
+    width:100%;
+    height:auto;
+}
+.contentTopBottom{
+    width:100%;
+    height:100px;
+    border-right: 1px solid lightgray;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leftctb{
+    width:50px;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.leftctb img{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+}
+.rightctb{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.usrName{
+    font-size: 16px;
+    opacity: 0.9;
+    color: black;
+    font-weight: bolder;
+    opacity:0.9;
+    text-transform: capitalize;
+}
+.followers{
+    font-size: 17px;
+    color: gray;
+}
+
+.postDate{
+    font-size: 13px;
+}
+.contentData{
+    width:auto;
+    border-right:1px solid lightgray;
+    
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+
+}
+.images{
+    width:100%;
+    height:20%;
+    
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
+.images img{
+    width:100%;
+    max-width: 800px;
+    min-width: 90%;
+    height:400px;
+    object-fit: cover;
+    object-position: center;
+}
+.postData{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow:wrap;
+    padding-left: 50px;
+    font-size: 18px;
+
+}
+
+
+.postContent::first-letter{
+    font-size: 50px;
+    font-weight: bolder;
+    padding-right: 5px;
+}
+.userDetails{
+    width:30%;
+    height:1000px;
+
+
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+.userInfo{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding:20px;
+}
+.userLog{
+    width:100px;
+    height:100px;
+    border-radius: 100%;
+}
+.logName{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 10px;
+
+    font-weight: 600;
+}
+
+.desc{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.767);
+    margin-top: 5px;
+
+}
+.userDetails h6{
+    align-self: flex-start;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+.follow{
+    border-radius: 50px;
+    background-color: #3d8110;
+    color:white;
+    border:transparent;
+    padding:8px;
+    outline:none;
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-right: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.relatedPosts{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+}
+
+.item{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:250px;
+    cursor: pointer;
+    align-items:center;
+    margin-top: 10px;
+}
+.leftRel{
+    width:80px;
+    height:50px;
+
+    object-fit: cover;
+    object-position: center;
+}
+.rightRel{
+    font-size: 12px;
+    padding: 10px;
+    font-weight: bolder;
+
+}
+
+.firstImg{
+    transition:1s ease;
+    opacity:0.9;
+    cursor: pointer;
+    width:100%;
+
+}
+.firstImg:hover{
+    transform:scale(1.01);
+    transition:1s ease;
+    opacity:1;
+}
+#show{
+    width:35px;
+    height:35px;
+    border-radius: 100%;
+    cursor: pointer;
+
+    outline:none;
+    border:0.1px solid lightgray;
+
+
+}
+#show img{
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+
+}
+@media screen and (max-width:940px){
+    .userDetails{
+        display:none;
+
+    }
+    .contentBar{
+        width:100%;
+    }
+}

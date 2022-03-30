@@ -1,0 +1,317 @@
+.dialog{
+    display:none;
+    background-color: rgba(12, 12, 12, 0.644);
+    width:100%;
+    height:100%;
+    top: 0px;
+    transition: 1s ease;
+
+    position:fixed;
+
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+}
+.dialogItem{
+    width:400px;
+    height:400px;
+    background-color:white;
+    border-radius: 10px;
+    transition: 1s ease;
+    box-shadow: 0px 0px 6px 0px #00000082;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+}
+.det{
+    width:100%;
+    height:100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.statusBar{
+    width:100%;
+    height:auto;
+    /* border:1px solid red; */
+    border:0.3px solid rgba(128, 128, 128, 0.452);
+
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.statusBar textarea{
+    resize: none;
+    width:100%;
+    height:40px;
+    outline:none;
+    padding:10px;
+    border:none;
+}
+.statusBar button{
+    outline:none;
+    background-color:#3d8110;
+    opacity:0.5;
+    color:white;
+    border:none;
+    align-self: flex-end;
+    width:50px;
+    height:25px;
+    margin: 5px;
+    padding-top: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    transition: 0.3s ease;
+
+}
+.statusBar button:hover{
+    opacity:1;
+    transition: 0.3s ease;
+
+}
+.followersBar{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    
+    align-items:flex-start;
+}
+.followersBar .hd{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.followersList{
+    width:100%;
+    
+    max-height: 100px;
+    height:auto;
+    overflow-y: scroll;
+    border-bottom: 1px solid lightgray;
+
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.followersItem{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding:6px;
+    padding-left: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.followersItem:hover{
+    background-color:rgba(0, 0, 0, 0.055);
+    
+}
+.followersItem img{
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    border:0.2px solid rgba(73, 73, 73, 0.295);
+    margin-right: 10px;
+
+    object-position: center;
+    object-fit: cover;
+}
+.followersItem button{
+    outline:none;
+    background-color:#3d8110;
+    opacity:0.5;
+    color:white;
+    border:none;
+    align-self: flex-end;
+    width:auto;
+    height:25px;
+    margin: 5px;
+    padding-top: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    transition: 0.3s ease;
+    font-size: 10px !important;
+    position:absolute;
+    right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+  
+}
+.followersItem button:hover{
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+.bookmarksList{
+    width:100%;
+    max-height: 150px;
+    
+    height:auto;
+    overflow-y: scroll;
+
+}
+.bd{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.bookmarksItem{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    padding:6px;
+    padding-left: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+.bookmarksItem:hover{
+    background-color:rgba(0, 0, 0, 0.055);
+}
+.bookmarksItem img{
+    width:30px;
+    height:30px;
+    border-radius: 10%;
+    border:0.2px solid rgba(73, 73, 73, 0.295);
+    margin-right: 10px;
+
+    object-position: center;
+    object-fit: cover;
+}
+.tit{
+
+}
+.removeBtn{
+    outline:none;
+    background-color:#3d8110;
+    opacity:0.5;
+    color:white;
+    border:none;
+    align-self: flex-end;
+    width:auto;
+    height:25px;
+    margin: 5px;
+    padding-top: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    transition: 0.3s ease;
+    font-size: 10px !important;
+    position:absolute;
+    right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.usr{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usr span{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.usr span img{
+    width:35px;
+    height:35px;
+    border-radius: 100%;
+    border:0.1px solid lightgray;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+    object-position: center;
+
+}
+#close{
+    background-color:transparent;
+    cursor: pointer;
+    opacity:1 !important;
+    color:black !important;
+    width:auto;
+    height:auto;
+    outline:none;
+    position:static;
+    margin:10px;
+    border:none;
+    align-self:flex-end;
+  
+}
+#close i{
+    color:white !important;
+    background-color:rgba(0, 0, 0, 0.747);
+    border-radius: 100%;
+    padding: 2px;
+    font-size: 15px !important;
+
+}

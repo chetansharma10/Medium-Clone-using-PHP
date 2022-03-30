@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+}
+.main{
+    width:100%;
+    height:100%;
+    font-family: sans-serif;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.nav{
+    width: 100%;
+    height:75px;
+
+    position:fixed;
+    top:0px;
+    transition: 1s ease;
+    z-index: 3;
+    
+
+    border-bottom: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:150px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    margin-left: 50px;
+
+}
+.links{
+    width:auto;
+    height:100%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 5%;
+
+}
+.links ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:auto;
+    height:100%;
+    
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    margin:10px;
+    color:black;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+.extra{
+    width:100%;
+    height:500px;
+    border-bottom: 1px solid black;
+    background-color: #C4E2FD;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+.info{
+    width:100%;
+    height:380px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+    background-image: url('./../assets/1.png');
+    background-repeat: no-repeat;
+    background-position: 800px 50px;
+    background-size: 360px;
+
+
+}
+.info h1{
+    font-size:65px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-family: 'Libre Baskerville', serif;
+}
+.info p{
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+
+.startWriting{
+    text-decoration: none;
+    color:black;
+    background-color:white;
+    width:100px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;    
+    margin-top: 14px;
+    padding-left: 15px;
+}
+.getStarted{
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 10px;
+    padding-left: 14px;
+    padding-right: 14px !important;
+    font-size: 13px !important;
+    color:white !important;
+
+    border-radius: 20px;
+}
+
+
+.trending{
+    width:100%;
+    height:auto;
+    margin-bottom: 50px;
+
+}
+.trendHead{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 30px;
+    font-weight:bolder;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-indent: 10px;
+    word-spacing: 5px;
+
+    margin-top: 50px;
+}
+
+.trendContainer{
+    width:90%;
+    height:auto;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+.trendItem{
+    width:250px;
+    height:auto;
+    padding: 2%;
+    cursor: pointer;
+}
+.content{
+    width:100%;
+    height:100%;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+.content .leftNum{
+    width:50px;
+    height:100%;
+    font-weight: bolder;
+    font-size: 30px;
+    color: lightgray;
+
+
+}
+
+.content .rightNum{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5px;
+
+}
+.rightNum .author{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    justify-content:flex-start;
+
+}
+.author img{
+    margin-right: 10px;
+}
+.author p{
+    font-size: 13px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.89);
+
+}
+.ptname{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.89);
+}
+.ptdate{
+    font-weight: lighter;
+    margin-top: 10px;
+
+    font-size: 13px;
+    color:rgb(51, 51, 51);
+}
+
+
+.footer{
+    width:100%;
+    height:auto;
+    border-top: 1px solid lightgray;
+
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+
+}
+.footerLeft{
+    width:70%;
+    height:auto;
+    margin-left: 30px;
+
+}
+.postItem{
+    width:90%;
+    height:150px;
+    margin-top: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.leftPost{
+    width:70%;
+    height:auto;
+    display: flex;
+    overflow:wrap;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+
+}
+.postAuthor{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    margin-bottom: 5px;
+    
+
+}
+.postAuthor img{
+    margin-right: 10px;
+    
+}
+.postAuthor p{
+    font-size:15px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.postTitle{
+    font-size:23px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.postContent{
+    font-weight: lighter;
+
+    color:rgb(117, 117, 117);
+}
+.rightPost{
+    width:200px;
+    height:134px;
+
+
+}
+.postCreatedOn{
+    color:rgb(56, 56, 56);
+    font-size: 13px;
+    margin-top: 5px;
+
+}
+.footerRight{
+    width:30%;
+    height:auto;
+
+    position:sticky;
+    right:0px;
+
+
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+.footerRight p{
+    font-size:13px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin:5px;
+
+}
+.footerRight .tags 
+{
+    width:90%;
+    height:auto;
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+
+}
+
+.tags a{
+    color:rgb(75, 75, 75);
+    text-decoration: none;
+    border:1px solid gray;
+    border-radius: 5px;
+    font-size: 14px;
+    padding:10px;
+    margin:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width:800px){
+
+    .info h1{
+        font-size:50px;
+    }
+    .info{
+        background-position: 420px 40px;
+        background-size: 10;
+    }
+    .footerRight{
+        display:none;
+    }
+    .footerLeft{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width:747px){
+
+  
+}
+
+@media screen and (max-width:564px){
+    .getStarted{
+        display:none;
+    }
+   
+    .info h1{
+        font-size:40px;
+    }
+    .info p{
+        font-size:15px;
+
+    }
+    .logo{
+        margin-left: 20px;
+        width:120px;
+    }
+    .extra{
+        padding-left: 20px;
+        padding-top: 10%;
+        
+    }
+    .extra{
+        height:auto;
+    }
+    .info{
+        background-position: 220px 40px;
+        background-size: 10;
+    }
+    .links{
+        margin-right: 2%;
+        width:auto;
+    }
+    
+}
